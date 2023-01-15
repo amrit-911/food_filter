@@ -65,9 +65,19 @@ button:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .container-filter {
+   .container-filter {
         background-color: aqua;
         color: black;
         height: 100%;
+        text-shadow: none;
+    }
+    .container-filter h1 {
+        font-size: 20px;
+    }
+    button {
+        width: 60px;
+        font-size: 10px;
+        height: 30px;
+        margin: 15px;
     }
 }
