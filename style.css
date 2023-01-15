@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: #282828;
+}
+
+.head {
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: black 3px 3px 3px;
+}
+
+.food-item {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+    color: white;
+    margin: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: black 10px 10px 10px;
+}
+
+.food-item h1 {
+    font-size: 18px;
+}
+
+.images {
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+
+.container-filter {
+    width: 100%;
+    position: fixed;
+    top: 500px;
+    color: white;
+    text-align: center;
+}
+
+.container-filter h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: black 3px 3px 3px;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #1B2430;
+    color: white;
+    margin: 30px;
+}
+
+button:hover {
+    color: black;
+    background-color: aqua;
+    transition: 0.4s;
+}
+
+.animate {
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0%;
+        transform: scale(1.5);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-filter {
+        background-color: aqua;
+        color: black;
+        height: 100%;
+        text-shadow: none;
+    }
+    .container-filter h1 {
+        font-size: 20px;
+    }
+    button {
+        width: 60px;
+        font-size: 10px;
+        height: 30px;
+        margin: 15px;
+    }
+}
